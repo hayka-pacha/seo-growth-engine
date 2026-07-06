@@ -5,7 +5,7 @@ Complete SEO audit & optimization skill for Claude Code. 60+ authoritative sourc
 ## Install
 
 ```bash
-claude plugins install git@github.com:eztharia/seo-growth-engine.git
+claude plugins install git@github.com:hayka-pacha/seo-growth-engine.git
 ```
 
 Or manually:
