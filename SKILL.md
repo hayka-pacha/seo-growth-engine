@@ -23,6 +23,17 @@ as you go. At the end, assemble everything into the Audit Report template.
 
 Then run through the phases below. Skip phases the user said they don't care about.
 
+### Multi-site audits: sequential only
+
+When the user asks you to audit multiple sites, run them **one at a time, sequentially**. Never audit sites in parallel — Playwright shares a single browser context, and cookies, localStorage, or service worker state from one site can contaminate navigation to another site, producing false redirects and phantom cross-site behavior.
+
+**Before each new site:**
+1. Call `browser_close` to kill the current browser context
+2. Wait 2 seconds for state to flush
+3. Then start the next site fresh with `browser_navigate`
+
+This ensures each audit is fully isolated and no cross-contamination occurs.
+
 ---
 
 ## Audit Report Template
