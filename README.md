@@ -11,7 +11,7 @@ claude plugins install git@github.com:hayka-pacha/seo-growth-engine.git
 Or manually:
 
 ```bash
-git clone https://github.com/eztharia/seo-growth-engine.git ~/.claude/skills/seo-growth-engine
+git clone https://github.com/hayka-pacha/seo-growth-engine.git ~/.claude/skills/seo-growth-engine
 ```
 
 ## What it does
